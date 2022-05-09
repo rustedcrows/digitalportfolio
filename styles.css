@@ -10,3 +10,26 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
 }
+
+ body {
+     background: black;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: white
+ }
+
+ .navbar {
+     overflow: hidden;
+     background-color: #847996;
+ }
+
+ .navbar a {
+    float: left; 
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+ }
+
+ .navbar a: hover, .dropdown: hover .dropbtn {
+     
+ }
