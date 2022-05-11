@@ -88,7 +88,12 @@
    margin-top: .5rem;
  }
 
- .contentFirst .heroFirst {
-    height: 500;
-    width: 500;
- }
+ .heroFirst {
+  background-image: url("img/first.png");
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: .5rem;
+}
