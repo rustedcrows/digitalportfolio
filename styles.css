@@ -87,3 +87,8 @@
    position: relative;
    margin-top: .5rem;
  }
+
+ .contentFirst .heroFirst {
+    height: 500;
+    width: 500;
+ }
