@@ -78,6 +78,7 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
  .heroIndex {
    background-image: url("img/heroIndex.png");
    height: 20rem;
@@ -89,7 +90,37 @@
  }
 
  .heroFirst {
-  background-image: url("img/first.png");
+  background-image: url("img/first2.png");
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: .5rem;
+}
+
+.heroChronoshift{
+  background-image: url("img/chronoshift.png");
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: .5rem;
+}
+
+.heroTourism{
+  background-image: url("img/tourism.png");
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: .5rem;
+}
+
+.heroStory{
+  background-image: url("img/story.png");
   height: 20rem;
   background-position: center;
   background-repeat: no-repeat;
