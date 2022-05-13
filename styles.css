@@ -128,3 +128,33 @@
   position: relative;
   margin-top: .5rem;
 }
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 10px;
+border: 2px solid #847;
+border-radius: 6px;
+box-sizing: border-box;
+margin-top: 8px;
+margin-bottom: 20px;
+resize: both;
+}
+
+input[type=submit] {
+  background-color:#847998;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  background-color: #E0B0FF;
+}
+
+.contentForm {
+border-radius: 7px;
+background-color:lightslategray;
+padding: 15px;
+}
