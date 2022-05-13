@@ -158,3 +158,20 @@ border-radius: 7px;
 background-color:lightslategray;
 padding: 15px;
 }
+
+.cardbutton {
+    align-items: center;
+    background-color: #847;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.cardbutton a::hover {
+    color: #E0B0FF;
+}
+
+.cardbutton a {
+    text-decoration: none;
+    color: #fff;
+}
+
