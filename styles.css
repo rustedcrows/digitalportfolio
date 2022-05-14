@@ -90,8 +90,8 @@
  }
 
  .heroFirst {
-  background-image: url("img/first2.png");
-  height: 20rem;
+  background-image: url("img/first6.png");
+  height: 55rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +101,7 @@
 
 .heroChronoshift{
   background-image: url("img/chronoshift.png");
-  height: 20rem;
+  height: 50rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,7 +111,7 @@
 
 .heroTourism{
   background-image: url("img/tourism.png");
-  height: 20rem;
+  height: 40rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,7 +121,7 @@
 
 .heroStory{
   background-image: url("img/story.png");
-  height: 20rem;
+  height: 60rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,22 +184,49 @@ body{
   place-items: center;
 }
 
-.slider {
-  height: 500px;
-  overflow: hidden;
-  position: relative;
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.row.full{
+  width: 2000vw;
 }
 
-.slider .slider-item {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: absolute;
-  transition: transform 400ms;
+.quarters article{
+  width: 200;
 }
 
-.slider .slider-item.active,
-.slider .slider-item.active.prev-item,
-.slider .slider-item.active.next-item {
-  display: block;
+.thirds article{
+  width: 200%;
+}
+
+.twothirds article:first-child{
+  width: 200%;
+}
+
+.twothirds article:last-child{
+  width: 200%;
+}
+
+.halves article{
+  width: 200%;
+}
+
+.cards article h3,
+.cards article h4,
+.cards article p,
+.card h2,
+.card h3, 
+.card p{
+  padding: 0 1rem;
+}
+
+.cards article a,
+.card a{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
