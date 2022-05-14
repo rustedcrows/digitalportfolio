@@ -1,14 +1,13 @@
 //const Ryan = "Brazil"
 const slider = document.querySelector('.slider');
-
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 
-var sectionIndex = 0;
+
 
 const indicatorParent = document.querySelector('.control ul'); 
 const indicators = document.querySelectorAll('.control li');
-
+var sectionIndex = 0;
 
 indicators.forEach((indicator, i) => {
   indicator.addEventListener('click', () => {

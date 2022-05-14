@@ -238,8 +238,9 @@ padding: 15px;
   margin:20px auto;
 }
 .carousel {
-  border: 2px solid #847996;
+  border: 2px solid #416be4;
   height: 400px;
+  overflow: hidden;
   position: relative;
   border-radius: 5px;
   background: #fff;
@@ -265,7 +266,7 @@ padding: 15px;
 }
 .arrow i {
   font-size: 70px;
-  color: #0040ff;
+  color: #416be4;
 }
 .left {
   left: 10px;
