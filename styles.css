@@ -184,3 +184,22 @@ body{
   place-items: center;
 }
 
+.slider {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider .slider-item {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  transition: transform 400ms;
+}
+
+.slider .slider-item.active,
+.slider .slider-item.active.prev-item,
+.slider .slider-item.active.next-item {
+  display: block;
+}
