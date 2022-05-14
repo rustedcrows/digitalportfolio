@@ -183,3 +183,35 @@ body{
   font-family: inherit;
 }
 
+.carousel-wrapper {
+  overflow: hidden;
+  width: 85%;
+}
+
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+}
+
+.carouselItem {
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.carouselInitial, 
+.carouselItem.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+
