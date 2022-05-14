@@ -1,39 +1,34 @@
 //const Ryan = "Brazil"
 
-document.querySelectorAll(".carousel").forEach((carousel) => {
-    const items = carousel.querySelectorAll(".carousel__item");
-    const buttonsHtml = Array.from(items, () => {
-      return `<span class="carousel__button"></span>`;
-    });
-  
-    carousel.insertAdjacentHTML(
-      "beforeend",
-      `
-          <div class="carousel__nav">
-              ${buttonsHtml.join("")}
-          </div>
-      `
-    );
-  
-    const buttons = carousel.querySelectorAll(".carousel__button");
-  
-    buttons.forEach((button, i) => {
-      button.addEventListener("click", () => {
-        // un-select all the items
-        items.forEach((item) =>
-          item.classList.remove("carousel__item--selected")
-        );
-        buttons.forEach((button) =>
-          button.classList.remove("carousel__button--selected")
-        );
-  
-        items[i].classList.add("carousel__item--selected");
-        button.classList.add("carousel__button--selected");
-      });
-    });
-  
-    // Select the first item on page load
-    items[0].classList.add("carousel__item--selected");
-    buttons[0].classList.add("carousel__button--selected");
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+
+const slider = document.querySelector('.slider');
+
+const indicatorParent = document.querySelector('.control ul'); 
+const indicators = document.querySelectorAll('.control li');
+var sectionIndex = 0;
+
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener('click', () => {
+    document.querySelector('.control .selected').classList.remove('selected');
+    indicator.classList.add('selected');
+    slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
+    index = i;
+    
   });
-  
+});
+
+left.addEventListener('click', function() {
+  index = (index > 0) ? index -1 : 0;
+  document.querySelector('.control .selected').classList.remove('selected');
+  indicatorParent.children[index].classList.add('selected');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+});
+
+right.addEventListener('click', function() {
+  index = (index < 4 - 1) ? index+1 : 3;
+  document.querySelector('.control .selected').classList.remove('selected');
+  indicatorParent.children[index].classList.add('selected');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+});
