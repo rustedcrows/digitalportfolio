@@ -233,6 +233,10 @@ padding: 15px;
 
 @media (min-width: 480px) {
   .heroChronoshift, .heroFirst, .heroStory, .heroIndex, .heroTourism{
-    
+    max-width: 2000px;
+  }
+  .contentPortfolio {
+    max-width: fit-content;
+    max-height: fit-content;
   }
 }
